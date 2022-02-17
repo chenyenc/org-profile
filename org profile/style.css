@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 60px 0 0;
+  margin: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background: #fff;
+  padding: 0 16px;
+}
+header .logo {
+  color: #990000;
+  font-size: 32px;
+  margin: 0 32px 0 0;
+}
+.menu-list a {
+  color: #990000;
+  text-decoration: none;
+  margin: 0 32px 0 0;
+}
+.button-wrap {
+  flex: 1;
+  text-align: right;
+}
+.button-wrap .login {
+  color: #990000;
+  background: #fff;
+  border: 1px solid #990000;
+  margin: 0 16px 0 0;
+}
+.title {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 32px;
+  text-align: center;
+  margin: 32px 0 16px;
+}
+.title::after,
+.title::before {
+  content: ' ';
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+.title::before {
+  margin: 0 8px 0 0;
+}
+.title::after {
+  margin: 0 0 0 8px;
+}
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #990000;
+  color: #fff;
+  cursor: pointer;
+}
+.button + .button {
+  margin: 0 0 0 8px;
+}
+.button:hover {
+  opacity: 0.8;
+}
+section {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  background: url('./img/banner2.png') no-repeat;
+  background-size: cover;
+}
+.banner .text {
+  font-size: 48px;
+  margin: 0 0 24px;
+}
+
+.group-list {
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+.group-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 33.3%;
+  padding: 72px 0;
+  background: #990000;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.group-item:hover {
+  background: rgba(0, 0, 0, 1);
+}
+.group-item div:first-child {
+  margin: 0 0 16px;
+}
+
+.club {
+  display: flex;
+  max-width: 768px;
+  margin: 32px auto 32px;
+}
+.club img {
+  width: 400px;
+  height: 260px;
+  margin: 0 32px 0 0;
+}
+.club .text {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.events {
+  padding: 1px 0 32px;
+}
+.events-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 32px;
+}
+.events-item {
+  width: 30%;
+}
+.events-item img {
+  width: 100%;
+  height: 200px;
+}
+.events-item .name {
+  text-align: center;
+  font-size: 32px;
+}
+.events-item .text {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+.button.more {
+  margin: 32px auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto 0;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  margin: 0 128px 0 0;
+}
+.avatar {
+  margin:  0 auto;
+}
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.avatar .user-name {
+  text-align: center;
+  margin: 0 0 32px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.nav-item::after {
+  position: absolute;
+  content: ' ';
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+  width: 4px;
+  height: 25px;
+  background: #990000;
+}
+.title.gi {
+  text-align: left;
+}
+.nav-item img {
+  width: 25px;
+  height: 25px;
+  margin: 0 16px 0 0;
+}
+.line {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px 0 0;
+}
+input {
+  height: 25px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 8px 0 0;
+}
+input:focus {
+  border: 1px solid #990000;
+}
+
+.about-us {
+  width: 800px;
+}
+.about-title {
+  font-size: 32px;
+  margin: 0 0 8px;
+}
+.about-content {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px;
+}
+.about-content p {
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  margin: -64px auto 0;
+}
+.info > img {
+  width: 150px;
+  height: 150px;
+  margin: 0 16px 0 0;
+  border-radius: 50%;
+}
+.info .name-button {
+  display: flex;
+  margin: 56px 0 0;
+  justify-content: space-between;
+}
+.name-button span {
+  font-size: 28px;
+  font-weight: bold;
+}
+.star-wrap {
+  display: flex;
+}
+.star-wrap img {
+  width: 20px;
+  height: 20px;
+}
